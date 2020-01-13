@@ -38,13 +38,66 @@
         <p>Pour accentuer un texte (en <em>italique</em> ou en <b>gras</b>, par exemble), il suffit d'entourer la portion de texte souhaitée par les symboles * ou  _ (italique), ou  ** ou  __ (gras).<br></p>
         <code>
             <p>*Ce texte sera en italique*<br>
-            _Ce texte sera également en italique_<br>
-
+            _Ce texte sera également en italique_<br><br>
             **Ce texte sera en gras**<br>
-            __Ce texte sera également en gras__<br>
-
+            __Ce texte sera également en gras__<br><br>
             _Il est **possible** de les combiner_<br></p>
         </code>
         <p><b>Attention:</b> bien qu'il existe deux manières différentes d'accentuer son texte, celles-ci ne sont pas interchangeables (**cette portion de texte ne sera pas en gras__)!</p>
+        <h2>Listes</h2>
+        <p>Il y a deux types de listes: les <b>listes à puces</b> et les <b>listes organisées</b>. Markdown requiert des symboles différents en fonction de la liste utilisée.<br></p>
+        <h4>Listes à puces<br></h4>
+            <ul>
+                <li>Une puce</li>
+                <li>Une autre puce</li>
+                <ul>
+                    <li>une sous-puce</li>
+                    <li>une autre sous-puce</li>
+                </ul>
+                <li>Et encore une autre puce!</li>
+            </ul>
+        <p>Le symbole * permet la création d'une liste à puce. A noter qu'il est possible de les imbriquer.<br></p>
+        <code>
+            <p>* Une puce<br>
+            * Une autre puce<br>
+            * Une sous-puce<br>
+            * Une autre sous-puce<br>
+            * Et encore une autre puce !<br></p>
+        </code>
+        <h4>Listes organisées</h4>
+        <ol>
+            <li>Une puce</li>
+            <li>Une autre puce</li>
+            <ol>
+                <li>Et encore une autre puce!</li>
+            </ol>
+        </ol>
+        <p>Pour créer une liste organisée, il suffit de commencer les portions de texte souhaitées par des numéros, suivis du symbole '.'.<br></p>
+        <code>
+            <p>1. Une puce<br>
+            1. Une autre puce<br>
+                1. Et encore une autre puce !<br></p>
+        </code>
+        <h2>Faire une citation</h2>
+        <p>Pour demarquer une citation il suffit d'ajouter un > devant votre citation.<br></p>
+        <blockquote>
+            <p>Cela se présente de cette manière.</p>
+        </blockquote>
+        <h2>Mettre un lien</h2>
+        <p>Il suffit de mettre le mot sur lequel vous souhaitez faire votre lien entre crochets [ ], puis votre lien entre parenthèses ( ).<br><br>
+        <div style="text-align: center">Rendez-vous sur <a href="http://github.com">GitHub</a> !<br></div></p>
+        <h2>Inline code</h2>
+        <p>Pour désigner un mot ou une phrase comme code, placez-le entre guillemets (`).<br><br>
+        <b>Cela se présente de cette manière:</b><code> j'écris mon code.</code><br></p>
+        <h2>Comment ajouter une image en markdown?</h2>
+        <p>L'ajout d'image peut se faire de deux manières:<br>
+            <ul><li><b>Localement:</b> il suffit de preciser votre alt entre crochet et le lien entre parenthèse.</li></ul>
+            ![image alt] (cheminVersImage/nomImage.extention)<br><br>
+        </p>
+        <img src="image_Markdown.jpg" alt="image_Markdown" />
+        <code>
+            Notez que si votre image se trouve au même niveau que votre document, il n'est pas nécessaire de préciser le chemin.
+        </code>
+        
     </body>
 </html>
